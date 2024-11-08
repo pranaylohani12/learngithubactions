@@ -1,0 +1,12 @@
+name: Print Runner Name
+
+on:
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  print-runner-name:
+    runs-on: [self-hosted, linux]  # Specify your self-hosted runner
+
+    steps:
+      - name: Print Runner Name
+        run: echo "Runner Name: $RUNNER_NAME"
