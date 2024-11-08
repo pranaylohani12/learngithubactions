@@ -9,5 +9,7 @@ jobs:
 
     steps:
       - name: Print Runner Name
-        run: echo |
-          "Runner Name: $RUNNER_NAME"
+        run: |
+          echo "Hello i m running in gcp"
+          uname -a
+        
